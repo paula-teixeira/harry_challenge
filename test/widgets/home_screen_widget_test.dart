@@ -35,7 +35,7 @@ main() {
     final mockNetworkManager = MockNetworkManager();
 
     when(mockNetworkManager.getData()).thenAnswer((_) async => []);
-    
+
     await tester.pumpWidget(
       AppDependencies(
         networkManager: mockNetworkManager,
